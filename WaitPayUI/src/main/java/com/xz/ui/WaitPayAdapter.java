@@ -132,7 +132,7 @@ public class WaitPayAdapter extends XRvPureDataAdapter<Object> {
             goodsPrice.setText("￥" + wpge.getPrice());
             goodsTotalPrice.setText("￥" + wpge.getBuySum());
 
-            Glide.with(goodsIv).load(wpge.getImgUrl()).apply(new RequestOptions().error(R.drawable.ic_launcher_background)).into(goodsIv);
+//            Glide.with(goodsIv).load(wpge.getImgUrl()).apply(new RequestOptions().centerCrop().error(R.drawable.ic_launcher_background)).into(goodsIv);
         } else if (getItemViewType(position) == ITEM_LIKE_TITLE) {
             holder.setText(R.id.iwplt_tv, ((WaitPayLikeTitleEntity) mDatas.get(position)).getLikeTitleStr());
 
@@ -144,7 +144,7 @@ public class WaitPayAdapter extends XRvPureDataAdapter<Object> {
             likeOldPrice.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG); // 设置中划线并加清晰
             //
             WaitPayLikeEntity wple = ((WaitPayLikeEntity) mDatas.get(position));
-            Glide.with(likeIv).load(wple.getImg()).apply(new RequestOptions().error(R.drawable.ic_launcher_background)).into(likeIv);
+            Glide.with(likeIv).load(wple.getImg()).apply(new RequestOptions().centerCrop().error(R.drawable.ic_launcher_background)).into(likeIv);
             likeName.setText(wple.getName());
             likeNewPrice.setText("￥"+wple.getPrice());
             likeOldPrice.setText("￥"+wple.getOriginalPrice());

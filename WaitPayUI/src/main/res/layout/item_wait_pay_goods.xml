@@ -14,9 +14,12 @@
 
     <ImageView
         android:id="@+id/iwpg_goods_iv"
-        android:layout_marginTop="13dp"
         android:layout_width="140dp"
         android:layout_height="105dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iwpg_top_line" />
 
     <TextView
