@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_color">#000</color>
+
+    <color name="txt_black_color">#000</color>
+    <color name="txt_3_color">#999</color>
+
+
+    <color name="color_BD">#DBDBDB</color>
+
+    <color name="color_DE">#DEDEDE</color>
+</resources>

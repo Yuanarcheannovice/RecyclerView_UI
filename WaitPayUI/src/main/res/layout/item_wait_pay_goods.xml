@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <View
+        android:id="@+id/iwpg_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/color_BD" />
+
+    <ImageView
+        android:id="@+id/iwpg_goods_iv"
+        android:layout_marginTop="13dp"
+        android:layout_width="140dp"
+        android:layout_height="105dp"
+        app:layout_constraintTop_toBottomOf="@+id/iwpg_top_line" />
+
+    <TextView
+        android:id="@+id/iwpg_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/txt_black_color"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iwpg_goods_iv"
+        tools:text="￥ 商品价格" />
+
+    <TextView
+        android:id="@+id/iwpg_goods_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:gravity="left|top"
+        android:textColor="@color/txt_black_color"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/iwpg_goods_price"
+        app:layout_constraintStart_toEndOf="@+id/iwpg_goods_iv"
+        app:layout_constraintTop_toTopOf="@+id/iwpg_goods_iv"
+        tools:text="商品名称1111111111" />
+
+    <TextView
+        android:id="@+id/iwpg_goods_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_iwpg_content_tv_bg"
+        android:paddingBottom="2dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="2dp"
+        android:textColor="@color/txt_3_color"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/iwpg_goods_iv"
+        app:layout_constraintTop_toBottomOf="@+id/iwpg_goods_name"
+        tools:text="详细参数" />
+
+
+    <TextView
+        android:id="@+id/iwpg_goods_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/txt_3_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iwpg_goods_iv"
+        tools:text="共一件商品 合计：￥428" />
+
+    <View
+        android:id="@+id/iwpg_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_BD"
+        app:layout_constraintTop_toBottomOf="@+id/iwpg_goods_total_price" />
+
+    <TextView
+        android:id="@+id/iwpg_submit_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_iwpg_submit_tv_bg"
+        android:paddingBottom="4dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="4dp"
+        android:text="确认支付"
+        android:textColor="#FE8F64"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/iwpg_line"
+        app:layout_constraintTop_toBottomOf="@+id/iwpg_line" />
+
+
+    <TextView
+        android:id="@+id/iwpg_cancel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_iwpg_cancel_tv_bg"
+        android:paddingBottom="4dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="4dp"
+        android:text="取消订单"
+        android:textColor="@color/txt_3_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/iwpg_submit_tv"
+        app:layout_constraintTop_toBottomOf="@+id/iwpg_line" />
+
+
+</android.support.constraint.ConstraintLayout>
