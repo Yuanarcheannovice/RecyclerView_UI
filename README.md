@@ -7,6 +7,6 @@ UI图 ：
 
 效果图：
 
-<img width="200" height="700" src="https://github.com/Yuanarcheannovice/RecyclerView_UI/blob/master/WaitPayUI/UI/Snipaste_2018-09-05_16-49-47.png"/>
+<img width="200" height="500" src="https://github.com/Yuanarcheannovice/RecyclerView_UI/blob/master/WaitPayUI/UI/Snipaste_2018-09-05_16-49-47.png"/>
 
 
